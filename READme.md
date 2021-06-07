@@ -6,8 +6,7 @@ Ayuel Garang
 
 ## Description
 
-This is an application whereby it contains current issues i.e news to help those who have less time in watching TV to catch up.The website contains different articles from different authors .It gets its data from the [NEWS API](https://newsapi.org/)
-
+This is an application whereby it contains current issues i.e news to help those who have less time in watching TV to catch up. The website contains different articles from different authors. It gets its data from the [NEWS API](https://newsapi.org/)
 ## Live Demo
 
 
@@ -33,14 +32,14 @@ This is an application whereby it contains current issues i.e news to help those
 
 ## Technology used
 
-* Python3.6
+* Python3.8
 * Flask
 * Heroku
 
 ## Contact Information 
 
-If you have any question or contributions, please email me at [kerrykomar@gmail.com]
+If you have any question or contributions, please email me at [ayuelgarang105@gmail.com]
 
 ### License
-  [MIT] Copyright (c) 2020 Kerry Kogei
+  [MIT] Copyright (c) 2021 Ayuel Gabriel
 
