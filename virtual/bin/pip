@@ -1,4 +1,4 @@
-#!/home/gabriel/Documents/Moringa-School-Projects/News_App/virtual/bin/python
+#!/home/gabriel/Documents/moringa-core/News_App/virtual/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

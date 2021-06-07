@@ -1,0 +1,3 @@
+NEWS_API_KEY ='ced9001d91e24ec7a7c30f179ed8189e'
+SECRET_KEY ='gaza'
+

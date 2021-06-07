@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/gabriel/Documents/Moringa-School-Projects/News_App/virtual"
+VIRTUAL_ENV="/home/gabriel/Documents/moringa-core/News_App/virtual"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,26 +1,36 @@
-from flask import render_template,request,redirect,url_for
-from ..requests import getSources,getArticles
-from ..models import Source, Article
+from flask import render_template,redirect,url_for
 from . import main
+from ..requests import get_sources, get_headlines,get_category,article_source
 
+
+#Views 
 @main.route('/')
 def index():
+    '''
+    Root function returning index/home page with data
+    '''
+    source = get_sources()
+    headlines = get_headlines()
+    return render_template('index.html',sources=source, headlines = headlines)
 
-    business = getSources('business')
-    entertainment = getSources('entertainment')
-    health  = getSources('health')
-    science = getSources('science')
-    sports = getSources('sports')
-    technology = getSources('technology')
-    
-
-    title = 'Home, Welcome to the best News Center'
-
-    return render_template('index.html',title = title, business = business,entertainment = entertainment,health = health,science = science, sports = sports,technology = technology)
-
-@main.route('/sources/<id>')
+@main.route('/articles/<id>')
 def article(id):
-    article = getArticles(id)
+
+    '''
+    View article page function that returns the various article details page and its data
+    '''
+    # title= 'Articles'
+    articles = article_source(id)
     title = f'{id}'
     
-    return render_template('article.html',article = article,title = title)
+    return render_template('articles.html',articles= articles,title=title )
+@main.route('/categories/<category>')
+def category(category):
+    '''
+    function to return the categories.html page and its content
+    '''
+    category = get_category(category)
+    title = f'{category}'
+    category = category
+
+    return render_template('categories.html',title = title,category = category )
